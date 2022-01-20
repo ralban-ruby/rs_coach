@@ -62,7 +62,11 @@
       type: string
       sql: ${TABLE}."ERROR_TYPE_C" ;;
     }
-
+    dimension: rac_tag {
+      type: yesno
+      label: "RAC_tag"
+      sql: ${TABLE}."RAC_TAG" ;;
+    }
     dimension: name {
       type: string
       sql: ${TABLE}."NAME" ;;
